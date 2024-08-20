@@ -220,7 +220,7 @@ html, body {
   }
   
   .icon {
-     margin: 3px;
+     margin: 20px;
      width: 35px;
      height: 35px;
   }
@@ -268,7 +268,28 @@ html, body {
     font-weight: bold;
 }
 
-  
+  /* Audio play button */
+#play-audio {
+    margin-top: 20px;
+    padding: 1px 200px;
+    background-color: #ffffff00;
+    color: #ffffff;
+    font-family: custom-font;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#play-audio:hover {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+#play-audio:active {
+    transform: scale(0.98);
+}
 
 .role-icon {
     display: inline-block;
