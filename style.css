@@ -271,7 +271,7 @@ html, body {
   /* Audio play button */
 #play-audio {
     margin-top: 20px;
-    padding: 1px 200px;
+    padding: 1px 50px;
     background-color: #ffffff00;
     color: #ffffff;
     font-family: custom-font;
