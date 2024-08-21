@@ -50,7 +50,7 @@
                 <div style="margin: 0 .5rem; color: #ffffff; font-size: 2rem; transition: all .2s ease-in-out; margin-top: 10px;">
                 </div>
                         <!-- Play button -->
-        <button id="play-audio">Play Audio</button>
+        <button id="play-audio">Play Song</button>
             </div>
         </div>
 
@@ -79,10 +79,10 @@
             const audio = document.getElementById('background-audio');
             if (audio.paused) {
                 audio.play();
-                document.getElementById('play-audio').textContent = 'Pause Audio';
+                document.getElementById('play-audio').textContent = 'Pause Song';
             } else {
                 audio.pause();
-                document.getElementById('play-audio').textContent = 'Play Audio';
+                document.getElementById('play-audio').textContent = 'Play Song';
             }
         });
         </script>
