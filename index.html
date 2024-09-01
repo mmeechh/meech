@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>meech</title>
-    <meta name="description" content="meechs chill ass website"/>
-    <meta property="og:title" content="meech | come look"/>
-    <meta property="og:description" content="meechs chill ass website"/>
+    <meta name="description" content="meech.lol"/>
+    <meta property="og:title" content="meech"/>
+    <meta property="og:description" content="meech.lol"/>
     <meta property="og:type" content="website"/>
     <meta name="theme-color" content="#ffffff"/>
     <link rel="stylesheet" href="style.css">
@@ -50,12 +50,12 @@
                 <div style="margin: 0 .5rem; color: #ffffff; font-size: 2rem; transition: all .2s ease-in-out; margin-top: 10px;">
                 </div>
                         <!-- Play button -->
-        <button id="play-audio">Play Song</button>
+        <button id="play-audio">Play Audio</button>
             </div>
         </div>
 
         <!-- Audio element -->
-        <audio id="background-audio" src="pngs/QKThr.mp3" preload="auto" loop="true"></audio>
+        <audio id="background-audio" src="pngs/meech.mp3" preload="auto" loop="true"></audio>
 
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <script src="https://unpkg.com/cursor-effects@latest/dist/browser.js"></script>
@@ -69,6 +69,7 @@
 
             // Attempt to autoplay
             const audio = document.getElementById('background-audio');
+            audio.volume = 0.6; // Set volume to 50%
             audio.play().catch(error => {
                 console.log('Autoplay was prevented:', error);
             });
@@ -79,10 +80,10 @@
             const audio = document.getElementById('background-audio');
             if (audio.paused) {
                 audio.play();
-                document.getElementById('play-audio').textContent = 'Pause Song';
+                document.getElementById('play-audio').textContent = 'Pause Audio';
             } else {
                 audio.pause();
-                document.getElementById('play-audio').textContent = 'Play Song';
+                document.getElementById('play-audio').textContent = 'Play Audio';
             }
         });
         </script>
