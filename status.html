@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/status.css">
+        <script src="statusStuff/lanyard.js"></script>
+        <script src="statusStuff/config.js"></script>
+        <script src="/statusStuff/init.js"></script>
+    </head>
+    <body>
+        <a class="button return" type="button" href="index.html">Return</a>
+        <div class="display">
+            <div class="userinfo" id="margin">
+                <img id="avatar" draggable="false" alt="profile picture" width="64" height="64"
+                    src="https://cdn.discordapp.com/embed/avatars/0.png" />
+                <span id="display"></span>
+                <span id="username"></span>
+                <span id="status"><img id="status-emoji" draggable="false" alt=" " height="16" /> <span id="status-text"></span></span>
+                <a id="viewuser"  type="button"></a>
+            </div>
+            <div class="activities">
+            </div>
+        </div>
+
+        <!-- JavaScript for creating falling circles -->
+        <script>
+            function createCircle() {
+                const circle = document.createElement('div');
+                circle.classList.add('circle');
+
+                // Random horizontal position for the circle
+                circle.style.left = Math.random() * 100 + 'vw';
+
+                // Random size for the circle
+                const size = Math.random() * 20 + 10 + 'px';
+                circle.style.width = size;
+                circle.style.height = size;
+
+                // Random animation duration
+                circle.style.animationDuration = Math.random() * 5 + 3 + 's';
+
+                // Add the circle to the body
+                document.body.appendChild(circle);
+
+                // Remove the circle after it falls
+                setTimeout(() => {
+                    circle.remove();
+                }, 8000);
+            }
+
+            // Create circles at intervals
+            setInterval(createCircle, 500);
+        </script>
+    </body>
+</html>
