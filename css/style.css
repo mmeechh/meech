@@ -25,7 +25,7 @@ body {
     position: fixed;
     font-size: 24px;
     font-weight: 600;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -34,7 +34,7 @@ body {
     border-radius: 10px;
     user-select: none;
     z-index: 10000;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
 }
 
 .container {
@@ -67,7 +67,7 @@ body {
     position: relative; 
     z-index: 997; 
     user-select: none;
-    border: 3px solid rgb(255, 0, 0); /* Add this line for the white ring */
+    border: 3px solid rgb(255, 255, 255); /* Add this line for the white ring */
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff; /* Neon glow effect */
 }
 
@@ -81,7 +81,7 @@ body {
     display: inline-block;
     padding: 4px 5px; 
     border-radius: 30px; 
-    background-color: rgba(255, 0, 0, 0.8);      
+    background-color: rgba(255, 255, 255, 0.8);      
     position: relative; 
 }
 
@@ -98,7 +98,7 @@ body {
     justify-content: center;
     background-color: transparent;
     margin-top: 20px;
-    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff;
     transition: text-shadow 0.4s ease;
     flex-wrap: wrap;
 }
@@ -108,7 +108,7 @@ body {
 }
 
 .profile-links li a {
-    color: #000;
+    color: #000000;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -136,7 +136,7 @@ body {
     left: 50%;
     font-weight: 600;
     transform: translateX(-50%);
-    background-color: #ff0000;
+    background-color: #000000;
     color: #ffffff;
     padding: 2px 3px;
     border-radius: 10px;
@@ -197,7 +197,7 @@ body {
     top: -31px; 
     left: 50%; 
     transform: translateX(-50%); 
-    background-color: rgba(255, 0, 0, 0.9); 
+    background-color: rgba(0, 0, 0, 0.9); 
     padding: 3px 5px; 
     border-radius: 10px; 
     font-size: 12px;
@@ -218,7 +218,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000; /* Neon glow effect */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff; /* Neon glow effect */
 
 }
 
@@ -240,7 +240,7 @@ vertical-align: -9px;
 }
 
 #weather {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 15px;
     text-align: center;
     bottom: 70px;
@@ -305,10 +305,10 @@ vertical-align: -9px;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgba(255, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     border: none;
     border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(255, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
     width: 50px;
     height: 50px;
     display: flex;
@@ -317,11 +317,11 @@ vertical-align: -9px;
     z-index: 20;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000; /* Neon glow effect */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff, 0 0 50px #ffffff; /* Neon glow effect */
 }
 
 #mute-button:hover {
-    background-color: #ff0000;
+    background-color: #ffffff;
 }
 
 #mute-button i {
@@ -337,5 +337,3 @@ vertical-align: -9px;
         transform: translateX(-50%); /* Center horizontally */
     }
 }
-
-
