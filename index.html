@@ -3,76 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <link rel="icon" href="audio/logo.png"/>
+    <title>Trust me.</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
 </head>
 <body> 
-    <div class="background-container">
-        <video autoplay loop muted class="background-video">
-            <source src="asset/img/videos/video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    
-    <audio id="audio" src="asset/img/music/1900.mp3" loop="true"></audio>
-    <button id="mute-button"><i class="fa fa-volume-mute"></i></button>
+    <p>i will be back soon, working on a <b><a href="https://discord.gg/8P8BDHzbNZ" target="_blank" style="color:#f00; text-decoration:none;">bigger project!</a></b></p>
 
-    <div class="enter-overlay">
-        <div class="enter-message">[Click]..</div>
-    </div>
-    
-    <div class="container">
-        <img class="profile-picture" src="asset/img/profile/spiderman.png" alt="Profile Picture">
-        <h2 class="profile-name">m/<img src="asset/img/profile/butterfly.png" alt="Crown" width="35" height="35"></h2>
-        
-        <div class="badge-container">
-            <div class="badge">
-                <div class="badge-wrapper">
-                    <img src="asset/img/badge/ownercrown.png" alt="Badge">
-                    <div class="bubble">Owner</div>
-                </div>
-            </div>
-            <div class="badge">
-                <div class="badge-wrapper">
-                    <img src="asset/img/badge/finger.png" alt="Badge">
-                    <div class="bubble">Aura</div>
-                </div>
-            </div>
-            <div class="badge">
-                <div class="badge-wrapper">
-                    <img src="asset/img/badge/verified.gif" alt="Badge">
-                    <div class="bubble">hood fr</div>
-                </div>
-            </div>
-        </div>
-        
-        <ul class="profile-links">
-            <li>
-                <a href="https://discord.com/users/872658221821726811" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-            </li>
-            <li>
-                <a href="https://open.spotify.com/user/nkr9gtazwvxbyuljmz7029g23" target="_blank" title="Spotify"><i class="fab fa-spotify"></i></a> 
-            </li>
-            <li>
-                <a href="https://www.roblox.com/share?code=b3268ef4a8d1f242b3f2b1a2add61942&type=Profile&source=ProfileShare&stamp=1728346850961" target="_blank" title="Roblox"><i class="fa-solid fa-dice-one"></i></a>
-            </li>
-        </ul>
-        
-    </div>
-
-    <div id="weather">Loading weather...</div>
-    <div id="clock"></div>
-
-
-    <footer class="footer">
-        © meechh.xyz • all rights reserved
-    </footer>
-
-    <script src="js/music.js"></script>
-    <script src="js/weather.js"></script>
-    <script src="js/titleEffect.js"></script>
-    <script src="js/clock.js"></script>
+    <audio autoplay loop onloadedmetadata="this.volume=0.3">
+        <source src="audio/trust.mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>
